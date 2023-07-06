@@ -228,73 +228,18 @@ i:hover {
     .container {
         flex-direction: column;
         height: 100vh;
-        align-self: center;
-        padding-bottom: 200px;
     }
 
-    /*? Media Query - left Part */
     .left {
-        width: 600px;
+        width: 400px;
         align-items: center;
         align-content: center;
     }
 
-    .logo {
-        height: 305px;
-        width: 800px;
-        margin-left: -28px;
-    }
-
     .left h2 {
-        width: 600px;
-        font-size: 40px;
-        font-weight: 500;
+        width: 90%;
     }
 
-
-    /*? Media Query - Right-part */
-    .right {
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .login {
-        height: 650px;
-        width: 800px;
-        align-self: center;
-        padding: 30px;
-    }
-
-    .email-password {
-        height: 98px;
-        border: 0.1px solid rgb(218, 218, 218);
-        font-size: 34px;
-    }
-
-    .login-btn {
-        height: 98px;
-        font-size: 40px;
-    }
-
-    .login a {
-        font-size: 28px;
-    }
-
-    .create-btn {
-        height: 90px;
-        width: 300px;
-        font-size: 26px;
-    }
-
-    .text-part {
-        width: 500px;
-        font-size: 20px;
-        display: flex;
-    }
-
-
-    /*? Media Query - Footer  */
     .footer-part {
         display: none;
     }
