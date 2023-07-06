@@ -237,6 +237,10 @@ i:hover {
         align-content: center;
     }
 
+    .login{
+        width: 90%;
+    }
+
     .left h2 {
         width: 90%;
     }
