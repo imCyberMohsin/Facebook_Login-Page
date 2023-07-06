@@ -8,20 +8,31 @@
     background-color: #f0f2f5;
 }
 
-.body-part{
-    height: 720px;
-    width: 1000px;
-    margin: 0px 200px 0px;
+body{
     display: flex;
-    justify-content: space-evenly;
-    padding: 72px 25px 112px;
+    width: 100%;
+    height: 125vh;
+    flex-direction: column;
 }
 
-/* left */
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin: 0px 200px 0px; */
+    /* padding: 72px 25px 112px; */
+}
+
+
+/*? left Part */
 .left{
-    height:182px;
+    /* height:182px;
     width:585px;
-    padding-right: 32px;
+    padding-right: 32px; */
+    display: flex;
+    flex-direction: column;
 }
 
 .logo{
@@ -30,12 +41,11 @@
     background-image:url(./fb-icon.svg);
     background-repeat: no-repeat;
     margin-left: -28px;
-    margin-top: 105px;
 }
 
 .left h2{
     width:500px;
-    height: 85px;
+    /* height: 85px; */
     font-size: 28px;
     font-weight: 500;
 }
@@ -43,30 +53,33 @@
 
 /*? Right-part */
 .right{
-    width:395px;
-    height: 495px;
+    width:400px;
+    /* height: 495px; */
+    display: flex;
+    flex-direction: column;
 }
 .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #ffffff;
-    height: 350px;
     box-shadow: 0.5px 0.5px 10px 0px rgb(211, 211, 211);
     border-radius: 8px;
+    height: 350px;
+    width: 100%;
     margin-top: 58px;
-    padding: 15px 16px 18px;
-}
-.login input,a,button{
-    margin: 5px 0px 9px;
+    padding: 10px 16px 0px;
 }
 
-hr{
-    border: 0.11px solid rgb(234, 234, 234);
-    margin-top: 20px;
+.login input,a,button{
+    margin: 0px 0px 9px;
 }
 
 .email-password{
     background-color: #ffffff;
     height: 50px;
-    width:355px;
+    width: 100%;
     border: 0.1px solid rgb(218, 218, 218);
     border-radius: 6px;
     font-size: 17px;
@@ -86,13 +99,12 @@ input:focus{
     background-color: #1877f2;
     color:white;
     height: 50px;
-    width:355px;
+    width: 100%;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
     border: none;
     border-radius: 6px;
-    margin-bottom: 15px;
 }
 .login-btn:hover{
     cursor: pointer;
@@ -104,7 +116,6 @@ input:focus{
     color: #1877f2;
     font-size: 14px;
     text-align:center;
-    padding: 0px 110px 0px;
 }
 .login a:hover{
     cursor: pointer;
@@ -114,19 +125,27 @@ input:focus{
 .create-btn{
     background-color: #42b72a;
     color:white;
-    height: 48px;
-    width:190px;
+    height: 50px;
+    width: 190px;
     font-size: 17px;
     font-weight: 700;
     text-align: center;
     border: none;
     border-radius: 6px;
-    margin: 25px 78px 25px;
     transition: 0.1s ease-in-out;
 }
 .create-btn:hover{
     background-color: #3ba327;
     cursor: pointer;
+}
+
+.line{
+    padding-top: 20px;
+    border-top: 1px solid rgb(197, 197, 197);
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .text-part{
@@ -140,6 +159,7 @@ input:focus{
 .footer-part{
     background-color: #FFFFFF;
     height: 180px;
+    width: 100%;
     padding: 25px 200px 20px;
 }
 .lang{
@@ -191,4 +211,11 @@ i:hover{
     color: #8A8D91;
     font-size: 11px;
     margin-top: 22px;
+}
+
+
+/*? Media Query for 1080px */
+
+@media screen and (max-width: 1080px){
+    
 }
