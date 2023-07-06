@@ -1,64 +1,57 @@
 /*? Styles of Facebook Login Page  */
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Arial, Helvetica, sans-serif ;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #f0f2f5;
 }
 
-body{
+body {
     display: flex;
     width: 100%;
     height: 125vh;
     flex-direction: column;
 }
 
-.container{
+.container {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* margin: 0px 200px 0px; */
-    /* padding: 72px 25px 112px; */
 }
 
-
 /*? left Part */
-.left{
-    /* height:182px;
-    width:585px;
-    padding-right: 32px; */
+.left {
     display: flex;
     flex-direction: column;
 }
 
-.logo{
-    height:105px;
-    width:300px;
-    background-image:url(./fb-icon.svg);
+.logo {
+    height: 105px;
+    width: 300px;
+    background-image: url(./fb-icon.svg);
     background-repeat: no-repeat;
     margin-left: -28px;
 }
 
-.left h2{
-    width:500px;
-    /* height: 85px; */
+.left h2 {
+    width: 500px;
     font-size: 28px;
     font-weight: 500;
 }
 
 
 /*? Right-part */
-.right{
-    width:400px;
-    /* height: 495px; */
+.right {
+    width: 400px;
     display: flex;
     flex-direction: column;
 }
-.login{
+
+.login {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -72,11 +65,13 @@ body{
     padding: 10px 16px 0px;
 }
 
-.login input,a,button{
+.login input,
+a,
+button {
     margin: 0px 0px 9px;
 }
 
-.email-password{
+.email-password {
     background-color: #ffffff;
     height: 50px;
     width: 100%;
@@ -86,18 +81,19 @@ body{
     font-weight: 100px;
     padding-left: 15px;
 }
-input:focus{
+
+input:focus {
     outline: none;
     border: 1px solid #1877f2;
 }
 
-.email-password::placeholder{
+.email-password::placeholder {
     color: rgb(147, 147, 147);
 }
 
-.login-btn{
+.login-btn {
     background-color: #1877f2;
-    color:white;
+    color: white;
     height: 50px;
     width: 100%;
     font-size: 20px;
@@ -106,25 +102,27 @@ input:focus{
     border: none;
     border-radius: 6px;
 }
-.login-btn:hover{
+
+.login-btn:hover {
     cursor: pointer;
 }
 
-.login a{
+.login a {
     background-color: #ffffff;
     text-decoration: none;
     color: #1877f2;
     font-size: 14px;
-    text-align:center;
+    text-align: center;
 }
-.login a:hover{
+
+.login a:hover {
     cursor: pointer;
     text-decoration: underline;
 }
 
-.create-btn{
+.create-btn {
     background-color: #42b72a;
-    color:white;
+    color: white;
     height: 50px;
     width: 190px;
     font-size: 17px;
@@ -134,12 +132,13 @@ input:focus{
     border-radius: 6px;
     transition: 0.1s ease-in-out;
 }
-.create-btn:hover{
+
+.create-btn:hover {
     background-color: #3ba327;
     cursor: pointer;
 }
 
-.line{
+.line {
     padding-top: 20px;
     border-top: 1px solid rgb(197, 197, 197);
     background-color: white;
@@ -148,7 +147,7 @@ input:focus{
     justify-content: center;
 }
 
-.text-part{
+.text-part {
     margin-top: 28px;
     font-size: 14px;
     text-align: center;
@@ -156,26 +155,30 @@ input:focus{
 
 
 /*? Footer Part  */
-.footer-part{
+.footer-part {
     background-color: #FFFFFF;
     height: 180px;
     width: 100%;
     padding: 25px 200px 20px;
 }
-.lang{
+
+.lang {
     background-color: #FFFFFF;
 }
-.lang a{
+
+.lang a {
     padding-right: 10px;
     font-size: 12px;
     color: #8A8D91;
     background-color: #FFFFFF;
     text-decoration: none;
 }
-.lang a:hover{
+
+.lang a:hover {
     text-decoration: underline;
 }
-i{
+
+i {
     padding-top: 3px;
     color: grey;
     border: 1px solid rgb(179, 179, 179);
@@ -184,29 +187,34 @@ i{
     width: 30px;
     border-radius: 3px;
 }
-i:hover{
+
+i:hover {
     cursor: pointer;
 }
-.footer-part hr{
+
+.footer-part hr {
     margin-top: 7px;
     border: 0.1px solid rgb(226, 226, 226);
 }
 
-.foot-links{
+.foot-links {
     background-color: #FFFFFF;
     padding-top: 10px;
 }
-.foot-links a{
+
+.foot-links a {
     background-color: #FFFFFF;
     text-decoration: none;
     color: #8A8D91;
     font-size: 12px;
     padding-right: 20px;
 }
-.foot-links a:hover{
+
+.foot-links a:hover {
     text-decoration: underline;
 }
-.foot-links p{
+
+.foot-links p {
     background-color: #FFFFFF;
     color: #8A8D91;
     font-size: 11px;
@@ -216,6 +224,23 @@ i:hover{
 
 /*? Media Query for 1080px */
 
-@media screen and (max-width: 1080px){
-    
+@media screen and (max-width: 1080px) {
+    .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .left {
+        width: 400px;
+        align-items: center;
+        align-content: center;
+    }
+
+    .left h2 {
+        width: 90%;
+    }
+
+    .footer-part {
+        display: none;
+    }
 }
